@@ -1,0 +1,25 @@
+Simple Log backup 
+
+USAGE:
+
+gem install logbackup
+require 'rubygems'
+require 'yaml'
+require 'lib/logbackup'
+
+config = "/user/log/"
+
+LOG_DIRECTORY_PATH = config['log_directory']
+
+
+class Logbackup
+  
+  p "-----------Start-------------"  
+
+   logbackup = LogbackUp.new "development.log","#{Time.now}_development.log",LOG_DIRECTORY_PATH
+   logbackup.renamefile
+   logbackup.createfile
+  p "--------------End---------------"
+end
+
+
