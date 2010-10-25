@@ -3,23 +3,22 @@ Simple Log backup
 USAGE:
 
 gem install logbackup
+
 require 'rubygems'
 require 'yaml'
-require 'lib/logbackup'
+require 'logbackup'
 
-config = "/user/log/"
+config = "/users/log"
 
-LOG_DIRECTORY_PATH = config['log_directory']
+LOG_DIRECTORY_PATH = config
 
 
-class Logbackup
+class Sample
   
   p "-----------Start-------------"  
-
    logbackup = LogbackUp.new "development.log","#{Time.now}_development.log",LOG_DIRECTORY_PATH
    logbackup.renamefile
    logbackup.createfile
   p "--------------End---------------"
 end
-
 
