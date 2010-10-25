@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{logbackup}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["ShriSowdhaman"]
-  s.date = %q{2010-10-22}
+  s.date = %q{2010-10-25}
   s.description = %q{Simple Log backup}
   s.email = %q{shrisowdhaman@gmail.com}
   s.extra_rdoc_files = ["README", "lib/logbackup.rb"]
