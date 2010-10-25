@@ -17,7 +17,7 @@ class LogbackUp
   def renamefile_with_size(mb)
     if @log_size >3
       File.rename("#{@LOG_PATH}/#{@filename}","#{@LOG_PATH}/#{@rename}")  
-      File.new("#{@LOG_PATH}/#{@filename}", "w")
+      File.new("#{@LOG_PATH}/#{@filename}",  "w" )
     end
   end
   

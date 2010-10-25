@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{Simple Log backup}
   s.email = %q{shrisowdhaman@gmail.com}
   s.extra_rdoc_files = ["README", "lib/logbackup.rb"]
-  s.files = ["README", "Rakefile", "lib/logbackup.rb", "Manifest", "logbackup.gemspec"]
+  s.files = ["Manifest", "README", "Rakefile", "lib/logbackup.rb", "logbackup.gemspec"]
   s.homepage = %q{http://github.com/shrisowdhaman/logbackup}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Logbackup", "--main", "README"]
   s.require_paths = ["lib"]
